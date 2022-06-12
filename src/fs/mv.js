@@ -14,6 +14,7 @@ export const mv = (currentPath, input) => {
     }
     }catch{
         console.log('FS operation failed');
+        return currentPath;
     }
     return currentPath;
 }
