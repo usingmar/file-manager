@@ -7,6 +7,7 @@ export const cp = async (currentPath, input) => {
     else fs.copyFileSync(fs.realpathSync(currentPath + path.sep + input[0]), input[1]);
     }catch{
         console.log('FS operation failed');
+        return currentPath;
     }
     return currentPath;
 }
